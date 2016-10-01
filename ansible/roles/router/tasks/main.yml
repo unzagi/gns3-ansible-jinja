@@ -1,0 +1,5 @@
+---
+- name: Generate configuration files
+  template: src={{ item.profile }}.j2 dest=/tmp/{{ item.template }}.cfg
+  with_items: 
+   juniper
