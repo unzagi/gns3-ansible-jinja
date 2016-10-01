@@ -1,4 +1,17 @@
 # Readme
+
+Instructions
+--
+
+GNS3
+1. Run vagrant up
+2. Run GNS3
+3. Place images into images folder and point GNS3 to that folder
+4. You can place projects to the vagrant project folder if you wish
+
+Ansible
+1. Ansible is setup in the same way as https://github.com/unzagi/ansible-template which can be used to create jinja2 templates.
+
 Install packages contained in the Vagrant Box Version 0.1
 --
  1. GNS3 from [GNS3 Ubuntu Installer Guide (repo added to Vagrant Box)](https://gns3.com/support/docs/linux-installation)
