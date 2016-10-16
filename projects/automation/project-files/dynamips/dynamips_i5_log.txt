@@ -1,31 +1,51 @@
-Oct 16 14:24:50.725 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
-Oct 16 14:24:50.726 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 2713.
-Oct 16 14:24:51.124 HYPERVISOR: exec_cmd: hypervisor version 
-Oct 16 14:24:51.156 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\sbrooks\AppData\Local\Programs\Python\gns3-ansible\projects\automation\project-files\dynamips 
-Oct 16 14:24:51.157 GENERAL: working_dir=C:\Users\sbrooks\AppData\Local\Programs\Python\gns3-ansible\projects\automation\project-files\dynamips
-Oct 16 14:24:51.200 HYPERVISOR: exec_cmd: vm create R3 3 c3725 
-Oct 16 14:24:51.223 VM: VM R3 created.
-Oct 16 14:24:51.255 HYPERVISOR: exec_cmd: vm set_con_tcp_port R3 2003 
-Oct 16 14:24:51.291 HYPERVISOR: exec_cmd: c3725 get_mac_addr R3 
-Oct 16 14:24:51.338 HYPERVISOR: exec_cmd: vm set_ios R3 C:/Users/sbrooks/OneDrive - RM PLC/GNS3/images/IOS/c3725-adventerprisek9-mz.124-15.T14.image 
-Oct 16 14:24:51.379 HYPERVISOR: exec_cmd: vm set_nvram R3 256 
-Oct 16 14:24:51.423 HYPERVISOR: exec_cmd: c3725 set_mac_addr R3 c203.181c.0000 
-Oct 16 14:24:51.467 HYPERVISOR: exec_cmd: vm set_disk0 R3 0 
-Oct 16 14:24:51.501 HYPERVISOR: exec_cmd: vm set_exec_area R3 64 
-Oct 16 14:24:51.532 HYPERVISOR: exec_cmd: vm get_status R3 
-Oct 16 14:24:51.563 HYPERVISOR: exec_cmd: vm slot_add_binding R3 1 0 NM-1FE-TX 
-Oct 16 14:24:51.604 HYPERVISOR: exec_cmd: vm get_status R3 
-Oct 16 14:24:51.647 HYPERVISOR: exec_cmd: vm slot_add_binding R3 2 0 NM-1FE-TX 
-Oct 16 14:24:51.706 HYPERVISOR: exec_cmd: vm get_status R3 
-Oct 16 14:24:51.772 HYPERVISOR: exec_cmd: vm set_idle_pc R3 0x60c086a8 
-Oct 16 14:24:51.796 HYPERVISOR: exec_cmd: vm set_config R3 configs/i3_startup-config.cfg 
-Oct 16 14:24:52.423 HYPERVISOR: exec_cmd: nio create_udp udp-8192d8db-7394-4f05-88a3-aca312eabbc5 10006 127.0.0.1 10007 
-Oct 16 14:24:52.451 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 0 0 udp-8192d8db-7394-4f05-88a3-aca312eabbc5 
-Oct 16 14:24:52.470 HYPERVISOR: exec_cmd: vm get_status R3 
-Oct 16 14:24:55.064 HYPERVISOR: exec_cmd: vm get_status R3 
-Oct 16 14:24:55.098 HYPERVISOR: exec_cmd: vm extract_config R3 
-Oct 16 14:24:55.143 HYPERVISOR: exec_cmd: vm delete R3 
-Oct 16 14:24:55.143 VM: VM R3 destroyed.
-Oct 16 14:24:55.177 HYPERVISOR: exec_cmd: hypervisor stop 
-Oct 16 14:24:55.542 HYPERVISOR: Stopped.
-Oct 16 14:24:55.542 GENERAL: reset done.
+Oct 16 15:20:16.171 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Oct 16 15:20:16.171 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 4560.
+Oct 16 15:20:16.646 HYPERVISOR: exec_cmd: hypervisor version 
+Oct 16 15:20:16.673 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\sbrooks\AppData\Local\Programs\Python\gns3-ansible\projects\automation\project-files\dynamips 
+Oct 16 15:20:16.673 GENERAL: working_dir=C:\Users\sbrooks\AppData\Local\Programs\Python\gns3-ansible\projects\automation\project-files\dynamips
+Oct 16 15:20:16.708 HYPERVISOR: exec_cmd: vm create R5 5 c3725 
+Oct 16 15:20:16.709 VM: VM R5 created.
+Oct 16 15:20:16.741 HYPERVISOR: exec_cmd: vm set_con_tcp_port R5 2005 
+Oct 16 15:20:16.769 HYPERVISOR: exec_cmd: c3725 get_mac_addr R5 
+Oct 16 15:20:16.798 HYPERVISOR: exec_cmd: vm set_disk0 R5 0 
+Oct 16 15:20:16.828 HYPERVISOR: exec_cmd: vm set_nvram R5 256 
+Oct 16 15:20:16.855 HYPERVISOR: exec_cmd: vm set_ios R5 C:/Users/sbrooks/OneDrive - RM PLC/GNS3/images/IOS/c3725-adventerprisek9-mz.124-15.T14.image 
+Oct 16 15:20:16.894 HYPERVISOR: exec_cmd: vm get_status R5 
+Oct 16 15:20:16.937 HYPERVISOR: exec_cmd: vm set_idle_pc R5 0x60c086a8 
+Oct 16 15:20:16.971 HYPERVISOR: exec_cmd: vm set_exec_area R5 64 
+Oct 16 15:20:16.995 HYPERVISOR: exec_cmd: vm get_status R5 
+Oct 16 15:20:17.042 HYPERVISOR: exec_cmd: vm slot_add_binding R5 2 0 NM-1FE-TX 
+Oct 16 15:20:17.062 HYPERVISOR: exec_cmd: c3725 set_mac_addr R5 c205.1bfc.0000 
+Oct 16 15:20:17.089 HYPERVISOR: exec_cmd: vm get_status R5 
+Oct 16 15:20:17.127 HYPERVISOR: exec_cmd: vm slot_add_binding R5 1 0 NM-1FE-TX 
+Oct 16 15:20:17.145 HYPERVISOR: exec_cmd: vm set_config R5 configs/i5_startup-config.cfg 
+Oct 16 15:20:17.369 HYPERVISOR: exec_cmd: nio create_udp udp-a30a3f6e-d354-441a-9c64-d2dd23f664e1 10000 127.0.0.1 10001 
+Oct 16 15:20:17.402 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R5 0 0 udp-a30a3f6e-d354-441a-9c64-d2dd23f664e1 
+Oct 16 15:20:17.422 HYPERVISOR: exec_cmd: vm get_status R5 
+Oct 16 15:20:24.618 HYPERVISOR: exec_cmd: vm create Ghost 0 c3725 
+Oct 16 15:20:24.619 VM: VM Ghost created.
+Oct 16 15:20:24.633 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/sbrooks/OneDrive - RM PLC/GNS3/images/IOS/c3725-adventerprisek9-mz.124-15.T14.image 
+Oct 16 15:20:24.637 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Oct 16 15:20:24.644 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost c3725-adventerprisek9-mz.124-15.T14.image-128.ghost 
+Oct 16 15:20:24.651 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Oct 16 15:20:24.718 HYPERVISOR: exec_cmd: vm start Ghost 
+Oct 16 15:20:26.082 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Oct 16 15:20:26.091 HYPERVISOR: exec_cmd: vm stop Ghost 
+Oct 16 15:20:26.182 VM: VM Ghost shutdown.
+Oct 16 15:20:26.185 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Oct 16 15:20:26.186 VM: VM Ghost destroyed.
+Oct 16 15:20:26.360 HYPERVISOR: exec_cmd: vm set_ghost_status R5 2 
+Oct 16 15:20:26.363 HYPERVISOR: exec_cmd: vm set_ghost_file R5 c3725-adventerprisek9-mz.124-15.T14.image-128.ghost 
+Oct 16 15:20:26.369 HYPERVISOR: exec_cmd: vm get_status R5 
+Oct 16 15:20:26.377 HYPERVISOR: exec_cmd: vm start R5 
+Oct 16 16:28:35.341 HYPERVISOR: exec_cmd: vm get_status R5 
+Oct 16 16:28:35.375 HYPERVISOR: exec_cmd: vm stop R5 
+Oct 16 16:28:35.513 VM: VM R5 shutdown.
+Oct 16 16:28:35.556 HYPERVISOR: exec_cmd: vm extract_config R5 
+Oct 16 16:28:43.768 HYPERVISOR: exec_cmd: vm get_status R5 
+Oct 16 16:28:43.800 HYPERVISOR: exec_cmd: vm extract_config R5 
+Oct 16 16:28:43.846 HYPERVISOR: exec_cmd: vm delete R5 
+Oct 16 16:28:43.846 VM: VM R5 destroyed.
+Oct 16 16:28:43.887 HYPERVISOR: exec_cmd: hypervisor stop 
+Oct 16 16:28:44.180 HYPERVISOR: Stopped.
+Oct 16 16:28:44.180 GENERAL: reset done.
