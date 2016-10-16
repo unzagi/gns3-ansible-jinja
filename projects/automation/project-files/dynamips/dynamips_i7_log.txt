@@ -1,39 +1,51 @@
-Oct 16 15:21:17.436 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
-Oct 16 15:21:17.437 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 4575.
-Oct 16 15:21:17.462 HYPERVISOR: exec_cmd: hypervisor version 
-Oct 16 15:21:17.467 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\sbrooks\AppData\Local\Programs\Python\gns3-ansible\projects\automation\project-files\dynamips 
-Oct 16 15:21:17.467 GENERAL: working_dir=C:\Users\sbrooks\AppData\Local\Programs\Python\gns3-ansible\projects\automation\project-files\dynamips
-Oct 16 15:21:17.473 HYPERVISOR: exec_cmd: vm create R6 6 c3725 
-Oct 16 15:21:17.475 VM: VM R6 created.
-Oct 16 15:21:17.478 HYPERVISOR: exec_cmd: vm set_con_tcp_port R6 2006 
-Oct 16 15:21:17.483 HYPERVISOR: exec_cmd: c3725 get_mac_addr R6 
-Oct 16 15:21:17.490 HYPERVISOR: exec_cmd: vm get_status R6 
-Oct 16 15:21:17.497 HYPERVISOR: exec_cmd: vm set_idle_pc R6 0x60c086a8 
-Oct 16 15:21:17.503 HYPERVISOR: exec_cmd: vm set_disk0 R6 0 
-Oct 16 15:21:17.510 HYPERVISOR: exec_cmd: vm set_exec_area R6 64 
-Oct 16 15:21:17.517 HYPERVISOR: exec_cmd: vm set_nvram R6 256 
-Oct 16 15:21:17.522 HYPERVISOR: exec_cmd: vm get_status R6 
-Oct 16 15:21:17.529 HYPERVISOR: exec_cmd: vm slot_add_binding R6 2 0 NM-1FE-TX 
-Oct 16 15:21:17.536 HYPERVISOR: exec_cmd: vm get_status R6 
-Oct 16 15:21:17.542 HYPERVISOR: exec_cmd: vm slot_add_binding R6 1 0 NM-1FE-TX 
-Oct 16 15:21:17.550 HYPERVISOR: exec_cmd: vm set_ios R6 C:/Users/sbrooks/OneDrive - RM PLC/GNS3/images/IOS/c3725-adventerprisek9-mz.124-15.T14.image 
-Oct 16 15:21:17.560 HYPERVISOR: exec_cmd: vm set_config R6 configs/i6_startup-config.cfg 
-Oct 16 15:21:35.113 HYPERVISOR: exec_cmd: vm get_status R6 
-Oct 16 15:21:35.118 HYPERVISOR: exec_cmd: vm slot_remove_binding R6 2 0 
-Oct 16 15:21:35.125 HYPERVISOR: exec_cmd: vm get_status R6 
-Oct 16 15:21:35.131 HYPERVISOR: exec_cmd: vm slot_add_binding R6 2 0 NM-16ESW 
-Oct 16 15:21:40.475 HYPERVISOR: exec_cmd: vm set_ghost_status R6 2 
-Oct 16 15:21:40.482 HYPERVISOR: exec_cmd: vm set_ghost_file R6 c3725-adventerprisek9-mz.124-15.T14.image-128.ghost 
-Oct 16 15:21:40.488 HYPERVISOR: exec_cmd: vm get_status R6 
-Oct 16 15:21:40.495 HYPERVISOR: exec_cmd: vm start R6 
-Oct 16 16:28:35.335 HYPERVISOR: exec_cmd: vm get_status R6 
-Oct 16 16:28:35.372 HYPERVISOR: exec_cmd: vm stop R6 
-Oct 16 16:28:35.495 VM: VM R6 shutdown.
-Oct 16 16:28:35.503 HYPERVISOR: exec_cmd: vm extract_config R6 
-Oct 16 16:28:43.771 HYPERVISOR: exec_cmd: vm get_status R6 
-Oct 16 16:28:43.804 HYPERVISOR: exec_cmd: vm extract_config R6 
-Oct 16 16:28:43.853 HYPERVISOR: exec_cmd: vm delete R6 
-Oct 16 16:28:43.853 VM: VM R6 destroyed.
-Oct 16 16:28:43.898 HYPERVISOR: exec_cmd: hypervisor stop 
-Oct 16 16:28:44.029 HYPERVISOR: Stopped.
-Oct 16 16:28:44.029 GENERAL: reset done.
+Oct 16 16:36:43.368 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Oct 16 16:36:43.369 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 5157.
+Oct 16 16:36:43.424 HYPERVISOR: exec_cmd: hypervisor version 
+Oct 16 16:36:43.435 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\sbrooks\AppData\Local\Programs\Python\gns3-ansible\projects\automation\project-files\dynamips 
+Oct 16 16:36:43.435 GENERAL: working_dir=C:\Users\sbrooks\AppData\Local\Programs\Python\gns3-ansible\projects\automation\project-files\dynamips
+Oct 16 16:36:43.482 HYPERVISOR: exec_cmd: vm create R6 6 c3725 
+Oct 16 16:36:43.484 VM: VM R6 created.
+Oct 16 16:36:43.521 HYPERVISOR: exec_cmd: vm set_con_tcp_port R6 2006 
+Oct 16 16:36:43.536 HYPERVISOR: exec_cmd: c3725 get_mac_addr R6 
+Oct 16 16:36:43.586 HYPERVISOR: exec_cmd: vm get_status R6 
+Oct 16 16:36:43.618 HYPERVISOR: exec_cmd: vm slot_add_binding R6 1 0 NM-1FE-TX 
+Oct 16 16:36:43.639 HYPERVISOR: exec_cmd: vm set_disk0 R6 0 
+Oct 16 16:36:43.666 HYPERVISOR: exec_cmd: vm set_ios R6 C:/Users/sbrooks/OneDrive - RM PLC/GNS3/images/IOS/c3725-adventerprisek9-mz.124-15.T14.image 
+Oct 16 16:36:43.712 HYPERVISOR: exec_cmd: vm get_status R6 
+Oct 16 16:36:43.739 HYPERVISOR: exec_cmd: vm set_idle_pc R6 0x60c086a8 
+Oct 16 16:36:43.763 HYPERVISOR: exec_cmd: c3725 set_mac_addr R6 c206.2a98.0000 
+Oct 16 16:36:43.789 HYPERVISOR: exec_cmd: vm get_status R6 
+Oct 16 16:36:43.819 HYPERVISOR: exec_cmd: vm slot_add_binding R6 2 0 NM-1FE-TX 
+Oct 16 16:36:43.858 HYPERVISOR: exec_cmd: vm set_exec_area R6 64 
+Oct 16 16:36:43.882 HYPERVISOR: exec_cmd: vm set_nvram R6 256 
+Oct 16 16:36:43.910 HYPERVISOR: exec_cmd: vm set_config R6 configs/i6_startup-config.cfg 
+Oct 16 16:36:44.020 HYPERVISOR: exec_cmd: nio create_udp udp-87b83e01-6894-4c51-9ec7-c50b5624a876 10011 127.0.0.1 10010 
+Oct 16 16:36:44.042 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R6 0 0 udp-87b83e01-6894-4c51-9ec7-c50b5624a876 
+Oct 16 16:36:44.055 HYPERVISOR: exec_cmd: vm get_status R6 
+Oct 16 16:36:47.726 HYPERVISOR: exec_cmd: vm create Ghost 0 c3725 
+Oct 16 16:36:47.729 VM: VM Ghost created.
+Oct 16 16:36:47.743 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/sbrooks/OneDrive - RM PLC/GNS3/images/IOS/c3725-adventerprisek9-mz.124-15.T14.image 
+Oct 16 16:36:47.749 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Oct 16 16:36:47.756 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost c3725-adventerprisek9-mz.124-15.T14.image-128.ghost 
+Oct 16 16:36:47.761 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Oct 16 16:36:47.766 HYPERVISOR: exec_cmd: vm start Ghost 
+Oct 16 16:36:48.180 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Oct 16 16:36:48.188 HYPERVISOR: exec_cmd: vm stop Ghost 
+Oct 16 16:36:48.411 VM: VM Ghost shutdown.
+Oct 16 16:36:48.415 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Oct 16 16:36:48.415 VM: VM Ghost destroyed.
+Oct 16 16:36:48.430 HYPERVISOR: exec_cmd: vm set_ghost_status R6 2 
+Oct 16 16:36:48.437 HYPERVISOR: exec_cmd: vm set_ghost_file R6 c3725-adventerprisek9-mz.124-15.T14.image-128.ghost 
+Oct 16 16:36:48.445 HYPERVISOR: exec_cmd: vm get_status R6 
+Oct 16 16:36:48.455 HYPERVISOR: exec_cmd: vm start R6 
+Oct 16 17:24:59.996 HYPERVISOR: exec_cmd: vm get_status R6 
+Oct 16 17:25:00.031 HYPERVISOR: exec_cmd: vm stop R6 
+Oct 16 17:25:00.142 VM: VM R6 shutdown.
+Oct 16 17:25:00.148 HYPERVISOR: exec_cmd: vm extract_config R6 
+Oct 16 17:25:03.843 HYPERVISOR: exec_cmd: vm get_status R6 
+Oct 16 17:25:03.873 HYPERVISOR: exec_cmd: vm extract_config R6 
+Oct 16 17:25:03.917 HYPERVISOR: exec_cmd: vm delete R6 
+Oct 16 17:25:03.917 VM: VM R6 destroyed.
+Oct 16 17:25:03.950 HYPERVISOR: exec_cmd: hypervisor stop 
+Oct 16 17:25:04.306 HYPERVISOR: Stopped.
+Oct 16 17:25:04.306 GENERAL: reset done.

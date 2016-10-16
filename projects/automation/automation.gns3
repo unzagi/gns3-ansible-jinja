@@ -44,6 +44,14 @@
                 "id": 5,
                 "source_node_id": 2,
                 "source_port_id": 7
+            },
+            {
+                "description": "Link from SW1 port 6 to R6 port FastEthernet0/0",
+                "destination_node_id": 7,
+                "destination_port_id": 51,
+                "id": 6,
+                "source_node_id": 6,
+                "source_port_id": 26
             }
         ],
         "nodes": [
@@ -470,8 +478,11 @@
                         "vlan": 1
                     },
                     {
+                        "description": "connected to R6 on port FastEthernet0/0",
                         "id": 26,
+                        "link_id": 6,
                         "name": "6",
+                        "nio": "NIO_UDP",
                         "port_number": 6,
                         "type": "access",
                         "vlan": 1
@@ -496,9 +507,80 @@
                 },
                 "server_id": 1,
                 "type": "EthernetSwitch",
-                "vm_id": "536f41fa-802f-4e24-b047-18f69db51887",
                 "x": -35.5,
                 "y": -216.0
+            },
+            {
+                "description": "Router c3725",
+                "dynamips_id": 6,
+                "id": 7,
+                "label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "R6",
+                    "x": 20.5,
+                    "y": -25.0
+                },
+                "ports": [
+                    {
+                        "adapter_number": 1,
+                        "id": 49,
+                        "name": "FastEthernet1/0",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 2,
+                        "id": 50,
+                        "name": "FastEthernet2/0",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 0,
+                        "description": "connected to SW1 on port 6",
+                        "id": 51,
+                        "link_id": 6,
+                        "name": "FastEthernet0/0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 0,
+                        "id": 52,
+                        "name": "FastEthernet0/1",
+                        "port_number": 1
+                    }
+                ],
+                "properties": {
+                    "auto_delete_disks": true,
+                    "clock_divisor": 8,
+                    "console": 2006,
+                    "disk0": 0,
+                    "disk1": 0,
+                    "exec_area": 64,
+                    "idlemax": 500,
+                    "idlepc": "0x60c086a8",
+                    "idlesleep": 30,
+                    "image": "c3725-adventerprisek9-mz.124-15.T14.image",
+                    "image_md5sum": "64f8c427ed48fd21bd02cf1ff254c4eb",
+                    "iomem": 5,
+                    "mac_addr": "c206.2a98.0000",
+                    "mmap": true,
+                    "name": "R6",
+                    "nvram": 256,
+                    "platform": "c3725",
+                    "ram": 128,
+                    "slot0": "GT96100-FE",
+                    "slot1": "NM-1FE-TX",
+                    "slot2": "NM-1FE-TX",
+                    "sparsemem": true,
+                    "startup_config": "configs/i6_startup-config.cfg",
+                    "system_id": "FTX0945W0MY"
+                },
+                "server_id": 1,
+                "type": "C3725",
+                "vm_id": "2327c9b7-6221-474d-a6ae-20fd9f4d4d84",
+                "x": -27.0,
+                "y": -397.0
             }
         ],
         "servers": [
