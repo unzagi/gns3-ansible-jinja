@@ -1,0 +1,31 @@
+Oct 16 14:24:06.902 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Oct 16 14:24:06.903 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 2624.
+Oct 16 14:24:07.449 HYPERVISOR: exec_cmd: hypervisor version 
+Oct 16 14:24:07.472 HYPERVISOR: exec_cmd: hypervisor working_dir C:/Users/sbrooks/AppData/Local/Programs/Python/gns3-ansible/projects/automation\project-files\dynamips 
+Oct 16 14:24:07.472 GENERAL: working_dir=C:/Users/sbrooks/AppData/Local/Programs/Python/gns3-ansible/projects/automation\project-files\dynamips
+Oct 16 14:24:07.496 HYPERVISOR: exec_cmd: vm create R4 4 c3725 
+Oct 16 14:24:07.497 VM: VM R4 created.
+Oct 16 14:24:07.521 HYPERVISOR: exec_cmd: vm set_con_tcp_port R4 2004 
+Oct 16 14:24:07.544 HYPERVISOR: exec_cmd: c3725 get_mac_addr R4 
+Oct 16 14:24:07.565 HYPERVISOR: exec_cmd: vm set_ios R4 C:/Users/sbrooks/OneDrive - RM PLC/GNS3/images/IOS/c3725-adventerprisek9-mz.124-15.T14.image 
+Oct 16 14:24:07.590 HYPERVISOR: exec_cmd: vm get_status R4 
+Oct 16 14:24:07.613 HYPERVISOR: exec_cmd: vm slot_add_binding R4 1 0 NM-1FE-TX 
+Oct 16 14:24:07.656 HYPERVISOR: exec_cmd: vm get_status R4 
+Oct 16 14:24:07.689 HYPERVISOR: exec_cmd: vm set_idle_pc R4 0x60c086a8 
+Oct 16 14:24:07.716 HYPERVISOR: exec_cmd: vm set_exec_area R4 64 
+Oct 16 14:24:07.752 HYPERVISOR: exec_cmd: c3725 set_mac_addr R4 c204.1dec.0000 
+Oct 16 14:24:07.789 HYPERVISOR: exec_cmd: vm set_disk0 R4 0 
+Oct 16 14:24:07.840 HYPERVISOR: exec_cmd: vm set_nvram R4 256 
+Oct 16 14:24:07.902 HYPERVISOR: exec_cmd: vm get_status R4 
+Oct 16 14:24:07.942 HYPERVISOR: exec_cmd: vm slot_add_binding R4 2 0 NM-1FE-TX 
+Oct 16 14:24:07.968 HYPERVISOR: exec_cmd: vm set_config R4 configs/i4_startup-config.cfg 
+Oct 16 14:24:08.276 HYPERVISOR: exec_cmd: nio create_udp udp-bf5e4894-9bd5-4775-ba09-2c889ef5b54e 10009 127.0.0.1 10006 
+Oct 16 14:24:08.304 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R4 0 0 udp-bf5e4894-9bd5-4775-ba09-2c889ef5b54e 
+Oct 16 14:24:08.340 HYPERVISOR: exec_cmd: vm get_status R4 
+Oct 16 14:24:20.221 HYPERVISOR: exec_cmd: vm get_status R4 
+Oct 16 14:24:20.246 HYPERVISOR: exec_cmd: vm extract_config R4 
+Oct 16 14:24:20.273 HYPERVISOR: exec_cmd: vm delete R4 
+Oct 16 14:24:20.274 VM: VM R4 destroyed.
+Oct 16 14:24:20.301 HYPERVISOR: exec_cmd: hypervisor stop 
+Oct 16 14:24:20.443 HYPERVISOR: Stopped.
+Oct 16 14:24:20.443 GENERAL: reset done.

@@ -8,7 +8,7 @@ Vagrant.configure("2") do |config|
 
   # Every Vagrant development environment requires a box to build off of.
   config.vm.box_url = "https://atlas.hashicorp.com/unzagi/boxes/ubuntu-desktop/"
-  config.vm.box = "box-cutter/ubuntu1404-desktop"
+  config.vm.box = "unzagi/ubuntu-desktop"
   
   # Sync between the web root of the VM and the 'configs' directory
   config.vm.synced_folder "configs/", "/home/vagrant/vagrantGNS3/configs/"
