@@ -10,6 +10,8 @@ Vagrant.configure("2") do |config|
   config.vm.box_url = "https://atlas.hashicorp.com/unzagi/boxes/ubuntu-desktop/"
   config.vm.box = "unzagi/ubuntu-desktop"
   
+ 
+  
   # Sync between the web root of the VM and the 'configs' directory
   config.vm.synced_folder "configs/", "/home/vagrant/vagrantGNS3/configs/"
   # Sync between the web root of the VM and the 'projects' directory
@@ -22,5 +24,9 @@ Vagrant.configure("2") do |config|
   config.vm.synced_folder "scripts/", "/home/vagrant/scripts/"
   # Sync between the web root of the VM and the 'ansible' directory
   config.vm.synced_folder "ansible/", "/etc/ansible", mount_options: ["fmode=666"]
+
+  config.vm.provider :virtualbox do |vb|
+    vb.customize ['modifyvm', :id, '--usb', 'on']
+  end
   
 end
